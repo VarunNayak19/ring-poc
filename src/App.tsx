@@ -81,6 +81,7 @@ function App() {
       <p>Value: {value}</p>
       <p>width: {widthValue}</p>
       <p>offset: {offsetWidth}</p>
+      <p>pizelratio: {window.devicePixelRatio}</p>
 <div className='circle' style={{width:`${widthValue}px`,height:`${widthValue}px`}}></div>
     </div>
 </div>
