@@ -1,0 +1,71 @@
+.anim-container{
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+}
+
+@keyframes delayAnimationVone {
+  0% { transform: none; }
+  100% { transform: skewX(20deg); }
+}
+@keyframes delayAnimationVtwo {
+  0% { transform: none; }
+  100% { transform: skewX(-20deg); }
+}
+@keyframes delayAnimationNtwo {
+  0% { transform: none; }
+  100% { transform: skewX(30deg); }
+}
+.v-container,.n-container{
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+.parallelogram{
+  position: absolute;
+  bottom: 0px;
+  width: 100px; 
+  height: 300px; 
+  background-color: blue; 
+
+}
+.parallelogram-v-one {
+  animation: delayAnimationVone 1s ease-in-out forwards;
+  animation-delay: 300ms; 
+  transform-origin: bottom left;
+}
+
+.parallelogram-v-two {
+  animation: delayAnimationVtwo 1s ease-in-out forwards;
+  animation-delay: 300ms; 
+  transform-origin: bottom left;
+}
+
+.parallelogram-n-two{
+  animation: delayAnimationNtwo 1s ease-in-out forwards;
+  transform-origin: top left;
+  animation-delay: 1s;
+}
+
+.parallelogram-n-three{
+  animation: moveRight 1s ease-in-out forwards;
+  animation-delay: 1s;
+  
+}
+@keyframes moveRight {
+  0% { left: 0; }
+  100% { left: 175px; }
+}
+.slider-div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.circle{
+  border-radius: 50%;
+  border: 1mm solid black;
+}
