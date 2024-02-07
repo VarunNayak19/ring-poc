@@ -60,6 +60,11 @@
   0% { left: 0; }
   100% { left: 175px; }
 }
+.pp-div{
+  width: 1in;
+  height: 1in;
+  background-color: beige;
+}
 .slider-div{
   display: flex;
   flex-direction: column;
@@ -67,5 +72,6 @@
 }
 .circle{
   border-radius: 50%;
-  border: 1mm solid black;
+  background-color: brown;
+  /* border: 1mm solid black; */
 }
